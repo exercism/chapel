@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "uuid": "28baefde-b77e-4fa2-bf97-3b22af20b3de",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing Chapel locally",
+      "blurb": "Learn how to install Chapel locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "a1baef48-78f4-47f1-b010-03e556602e55",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn Chapel",
+      "blurb": "An overview of how to get started from scratch with Chapel"
+    },
+    {
+      "uuid": "70b24c0e-36ad-462f-bbc9-e097439fb262",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the Chapel track",
+      "blurb": "Learn how to test your Chapel exercises on Exercism"
+    },
+    {
+      "uuid": "7c17fc06-0da4-42f9-9a83-ff36f728369c",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful Chapel resources",
+      "blurb": "A collection of useful resources to help you master Chapel"
+    }
+  ]
+}
