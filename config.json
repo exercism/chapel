@@ -8,24 +8,43 @@
     "representer": false,
     "analyzer": false
   },
-  "blurb": "TODO: add blurb",
+  "blurb": "Chapel is a programming language designed for productive parallel computing at scale.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
     "indent_size": 4,
-    "highlightjs_language": "TODO: specify highlightjs language"
+    "highlightjs_language": "chapel"
   },
   "files": {
-    "solution": [],
-    "test": [],
-    "example": [],
-    "exemplar": []
+    "solution": ["src/%{kebab_slug}.chpl"],
+    "test": ["test/tests.chpl"],
+    "example": [".meta/example.chpl"],
+    "exemplar": [".meta/exemplar.chpl"]
   },
   "exercises": {
     "concept": [],
-    "practice": []
+    "practice": [
+      {
+        "slug": "hello-world",
+        "name": "Hello World",
+        "uuid": "5baaad51-39fc-4c8e-8a45-7bca5d880d3d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": []
+      }
+    ]
   },
   "concepts": [],
   "key_features": [],
-  "tags": []
+  "tags": [
+    "typing/static",
+    "execution_mode/compiled",
+    "platform/mac",
+    "platform/linux",
+    "paradigm/imperative",
+    "paradigm/object_oriented",
+    "runtime/standalone_executable",
+    "used_for/scientific_calculations"
+  ]
 }
