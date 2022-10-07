@@ -18,8 +18,8 @@
   "files": {
     "solution": ["src/%{kebab_slug}.chpl"],
     "test": ["test/tests.chpl"],
-    "example": [".meta/example.chpl"],
-    "exemplar": [".meta/exemplar.chpl"]
+    "example": [".meta/reference.chpl"],
+    "exemplar": [".meta/reference.chpl"]
   },
   "exercises": {
     "concept": [],
