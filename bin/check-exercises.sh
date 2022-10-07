@@ -13,7 +13,7 @@ for exercise in practice/*/ concept/*/; do
 	mkdir -p tmp-exercises/$exercise
 	cp -a $exercise/. tmp-exercises/$exercise
 	cd tmp-exercises/$exercise
-	cat .meta/example.chpl > src/*.chpl
+	cat .meta/reference.chpl > src/*.chpl
 	if ! mason test ; then
 	  ((cnt++))
 	fi
