@@ -2,8 +2,4 @@
 name="hello-world"
 version="0.1.0"
 chplVersion="1.28.0"
-license="None"
 type="application"
-
-[dependencies]
-
