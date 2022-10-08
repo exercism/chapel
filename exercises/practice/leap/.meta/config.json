@@ -1,0 +1,17 @@
+{
+  "authors": ["kytrinyx", "lucaferranti"],
+  "files": {
+    "solution": [
+      "src/leap.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ]
+  },
+  "blurb": "Given a year, report if it is a leap year.",
+  "source": "JavaRanch Cattle Drive, exercise 3",
+  "source_url": "http://www.javaranch.com/leap.jsp"
+}
