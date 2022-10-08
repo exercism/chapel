@@ -1,0 +1,17 @@
+{
+  "authors": [],
+  "files": {
+    "solution": [
+      "src/isogram.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ]
+  },
+  "blurb": "Determine if a word or phrase is an isogram.",
+  "source": "Wikipedia",
+  "source_url": "https://en.wikipedia.org/wiki/Isogram"
+}

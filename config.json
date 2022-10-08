@@ -54,6 +54,7 @@
         "name": "Leap",
         "practices": [],
         "prerequisites": [],
+<<<<<<< HEAD
         "difficulty": 1
       },
       {
@@ -92,6 +93,14 @@
         "uuid": "2ad98a06-67c9-4efd-8f8f-b687ef72f754",
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "uuid": "69b04b2c-164c-491d-9731-506c0983325e",
+        "slug": "isogram",
+        "name": "Isogram",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
