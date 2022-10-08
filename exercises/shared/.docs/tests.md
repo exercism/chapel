@@ -1,15 +1,13 @@
 # Tests
 
-<!-- TODO: write document
+To test your solution, open the terminal in the exercise folder (the one containing the `Mason.toml` file and the `src/` and `test/` folders) and run
 
-  This document should contain instructions on how to run the exercise's tests.
+```
+mason test
+```
 
-  The instructions should be short and to the point.
+If you feel like the error message is not informative enough, you may try the following to get a more verbose one.
 
-  The docs/TESTS.md file can contain a more verbose description on how to run tests.
-
-  When a student downloads an exercise via the CLI, this file's contents are
-  included into the HELP.md file.
-
-  See https://exercism.org/docs/building/tracks/shared-files for more information.
--->
+```
+mason test --show
+```
