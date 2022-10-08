@@ -14,6 +14,7 @@ This page lists some Chapel learning resources, taken from the [Learning Chapel]
 ## Documentation
 
 - [Chapel documentation](https://chapel-lang.org/docs/)
+- [Chapel syntax cheatsheet](https://chapel-lang.org/docs/language/reference.html)
 
 ## Videos
 

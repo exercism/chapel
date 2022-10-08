@@ -1,10 +1,10 @@
 # Installation
 
-## Windows Users
+## Windows users
 
 Please install [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and see the next section.
 
-## Linux / mac Users
+## Linux/Mac users
 
 ### Installing with brew
 
@@ -24,24 +24,27 @@ More advanced users may want to build Chapel from the source code themselves. To
 
 1. Install the [prerequisites](https://chapel-lang.org/docs/usingchapel/prereqs.html)
 2. [Download](https://chapel-lang.org/download.html) the archive of the latest Chapel release and extract it.
-3. You can next install Chapel into a specific location by doing
+3. First, you need to prepare for the installation and setup where you want to install Chapel. This can be done running the provided `configure` script. Simply running
 
 ```
 ./configure
+```
+
+will install binaries, libraries and shared files into `/usr/local/`, you can change this using the `--prefix` option. For example, if you want to install chapel into `~/.chapel` you can do
+
+```
+./configure --prefix=~/.chapel
+```
+
+5. To install the compiler and tools, run 
+
+```
 make
 make mason
 make chpldoc
 make install
 ```
 
-You can control where to install chapel with the `--prefix` option passed to `./configure`, for example 
-
-```
-./configure --prefix=~/.chapel
-```
-
-to install binaries, libraries and shared files into the `~/.chapel` folder.
-
-4. Make sure that the `/dir/for/install/bin` folder is in your `PATH` variable. 
+6. Make sure that the `/dir/for/install/bin` folder is in your `PATH` variable. 
 
 For more information about different ways to install Chapel and work from source code, see the [Building Chapel](https://chapel-lang.org/docs/usingchapel/building.html#) page in the documentation.

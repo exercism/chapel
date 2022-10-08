@@ -22,7 +22,7 @@
 
 - [Chapel youtube channel](https://www.youtube.com/c/ChapelParallelProgrammingLanguage/featured)
 
-## Social Media
+## Social media
 
 - [Chapel twitter](https://twitter.com/ChapelLanguage)
 - [Chapel facebook page](https://www.facebook.com/ChapelLanguage)
