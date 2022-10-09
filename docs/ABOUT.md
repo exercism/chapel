@@ -1,6 +1,7 @@
 # About
 
-Chapel is a programming language designed for productive parallel computing at scale. It is designed to allow researchers and industry professionals to easily harness the power of high-performance computing, without sacrificing productivity and readability.
+Chapel is a programming language designed for productive parallel computing at scale.
+It is designed to allow researchers and industry professionals to easily harness the power of high-performance computing, without sacrificing productivity and readability.
 
 ### Main features
 
