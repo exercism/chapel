@@ -1,5 +1,5 @@
 module TwoFer {
-  proc two_fer(name : string = "you") {
+  proc twoFer(name : string = "you") {
     return "One for " + name + ", one for me.";
   }
 }
