@@ -1,14 +1,12 @@
 # About
 
-<!-- TODO: write document
+Chapel is a programming language designed for productive parallel computing at scale.
+It is designed to allow researchers and industry professionals to easily harness the power of high-performance computing, without sacrificing productivity and readability.
 
-  This document contains a short introduction to the language.
+### Main features
 
-  The introduction should be relatively brief and touch upon what
-  makes the language interesting (and possibly unique). The goal
-  is to help students decide if they want to join this track.
-
-  The contents of this document are displayed on the track page,
-  provided the student has not joined the track.
-
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+- **productive**: code tends to be similarly readable/writable as Python
+- **scalable**: runs on laptopts, clusters, the cloud, and HPC systems
+- **fast**: performance competes with or beats C/C++ and MPI and OpenMP
+- **portable**: compiles and runs in virtually any \*nix environment
+- **open-source**: hosted on GitHub, permissevely licensed.

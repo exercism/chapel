@@ -1,13 +1,45 @@
 # Resources
 
-<!-- TODO: write document
+## Community
 
-  This document should link to useful resources.
+- [Chapel discourse][discourse-link] to ask questions and share one's work.
+- [Chapel on stack overflow][so-link] to ask and answer questions that would also benefit others.
+- [Chapel gitter][gitter-link] to chat with Chapel developers and users.
 
-  Feel free to link to any good resources you know, whether they
-  be websites, videos, mailing lists, etc.
+## Videos
 
-  The contents of this document are displayed on the track's documentation
-  page at `https://exercism.org/docs/tracks/<track>/resources`.
+- [Chapel youtube channel][youtube-link]
 
-  See https://exercism.org/docs/building/tracks/docs for more information. -->
+## Social media
+
+- [Chapel twitter][twitter-link]
+- [Chapel facebook page][facebook-link]
+
+## Events
+
+- [Chapel Implementers and Users Workshop (CHIUW)][chiuw-link], annual forum for Chapel enthusiast to gather, chat and share their work.
+- [Chapel events page][events-link] for all upcoming and past Chapel related events.
+
+## Get involved
+
+- [Chapel contributing guidelines][contrib-link]
+- [Chapel GitHub organization][gh-link] where development happens.
+
+## Other resources
+
+- [slides][slides-link] of presentations about Chapel and its applications.
+- [Research papers][papers-link] about Chapel and its applications.
+
+
+[discourse-link]: https://chapel.discourse.group/
+[so-link]: https://stackoverflow.com/questions/tagged/chapel
+[gitter-link]: https://gitter.im/chapel-lang/chapel
+[youtube-link]: https://www.youtube.com/c/ChapelParallelProgrammingLanguage/featured
+[twitter-link]: https://twitter.com/ChapelLanguage
+[facebook-link]: https://www.facebook.com/ChapelLanguage
+[chiuw-link]: https://chapel-lang.org/CHIUW.html
+[events-link]: https://chapel-lang.org/events.html
+[contrib-link]: https://chapel-lang.org/contributing.html
+[gh-link]: https://github.com/chapel-lang
+[slides-link]: https://chapel-lang.org/presentations.html
+[papers-link]: https://chapel-lang.org/papers.html
