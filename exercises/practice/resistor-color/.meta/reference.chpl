@@ -1,5 +1,4 @@
 module ResistorColor {
-  // implement reference solution
   proc colors() {
     return ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"];
   }
