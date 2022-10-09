@@ -1,3 +1,3 @@
 module ResistorColor {
- // write your solution here
+  // write your solution here
 }

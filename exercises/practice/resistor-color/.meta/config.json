@@ -1,5 +1,5 @@
 {
-  "authors": [],
+  "authors": ["kytrinyx", "lucaferranti"],
   "files": {
     "solution": [
       "src/resistor-color.chpl"
