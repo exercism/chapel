@@ -1,5 +1,8 @@
 {
-  "authors": ["kytrinyx", "lucaferranti"],
+  "authors": [
+    "kytrinyx",
+    "lucaferranti"
+  ],
   "files": {
     "solution": [
       "src/leap.chpl"
