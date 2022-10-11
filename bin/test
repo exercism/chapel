@@ -3,12 +3,15 @@
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 prepath=tmp-exercises
+current_path=$(pwd)
+exercises=${1:-'practice/*/ concept/*/'}
+trap 'cd "$current_path"; rm -rf -- "$prepath"' EXIT
 
 cp -r exercises $prepath
 cd $prepath
 
 cnt=0
-for exercise in practice/*/ concept/*/; do
+for exercise in $exercises; do
   if [ -d "$exercise" ]; then
     cd $exercise
     printf "\n====================\nTESTING $exercise \n====================\n"
