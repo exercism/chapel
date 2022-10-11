@@ -51,7 +51,7 @@ proc testQuestionWithNoLetters(test : borrowed Test) throws {
 }
 
 proc testShoutingWithSpecialCharacters(test : borrowed Test) throws {
-  test.assertEqual(response("ZOMG THE %^*@\#$(*^ ZOMBIES ARE COMING!!11!!1!"), "Whoa, chill out!");
+  test.assertEqual(response("ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"), "Whoa, chill out!");
 }
 
 proc testShoutingWithNoExclamationMark(test : borrowed Test) throws {
