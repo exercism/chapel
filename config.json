@@ -68,9 +68,17 @@
         "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "slug": "raindrops",
         "name": "Raindrops",
+	"practices": [],
+	"prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "uuid": "bad2bd29-19b8-44ce-a1f4-1694b0c468a2",
+        "slug": "bob",
+        "name": "Bob",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       }
     ]
   },
