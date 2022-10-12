@@ -2,204 +2,204 @@ use UnitTest;
 
 use Allergies;
 
-proc testTestingForEggsAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("eggs"));
+proc testNotAllergicToAnythingEggs(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "eggs"));
 }
 
-proc testTestingForEggsAllergyAllergicOnlyToEggs(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("eggs"));
+proc testAllergicOnlyToEggs(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(1, "eggs"));
 }
 
-proc testTestingForEggsAllergyAllergicToEggsAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("eggs"));
+proc testAllergicToEggsAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(3, "eggs"));
 }
 
-proc testTestingForEggsAllergyAllergicToSomethingButNotEggs(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("eggs"));
+proc testAllergicToSomethingButNotEggs(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(2, "eggs"));
 }
 
-proc testTestingForEggsAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("eggs"));
+proc testAllergicToEverythingEggs(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "eggs"));
 }
 
-proc testTestingForPeanutsAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("peanuts"));
+proc testNotAllergicToAnythingPeanuts(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "peanuts"));
 }
 
-proc testTestingForPeanutsAllergyAllergicOnlyToPeanuts(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("peanuts"));
+proc testAllergicOnlyToPeanuts(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(2, "peanuts"));
 }
 
-proc testTestingForPeanutsAllergyAllergicToPeanutsAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("peanuts"));
+proc testAllergicToPeanutsAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(7, "peanuts"));
 }
 
-proc testTestingForPeanutsAllergyAllergicToSomethingButNotPeanuts(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("peanuts"));
+proc testAllergicToSomethingButNotPeanuts(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(5, "peanuts"));
 }
 
-proc testTestingForPeanutsAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("peanuts"));
+proc testAllergicToEverythingPeanuts(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "peanuts"));
 }
 
-proc testTestingForShellfishAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("shellfish"));
+proc testNotAllergicToAnythingShellfish(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "shellfish"));
 }
 
-proc testTestingForShellfishAllergyAllergicOnlyToShellfish(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("shellfish"));
+proc testAllergicOnlyToShellfish(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(4, "shellfish"));
 }
 
-proc testTestingForShellfishAllergyAllergicToShellfishAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("shellfish"));
+proc testAllergicToShellfishAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(14, "shellfish"));
 }
 
-proc testTestingForShellfishAllergyAllergicToSomethingButNotShellfish(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("shellfish"));
+proc testAllergicToSomethingButNotShellfish(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(10, "shellfish"));
 }
 
-proc testTestingForShellfishAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("shellfish"));
+proc testAllergicToEverythingShellfish(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "shellfish"));
 }
 
-proc testTestingForStrawberriesAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("strawberries"));
+proc testNotAllergicToAnythingStrawberries(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "strawberries"));
 }
 
-proc testTestingForStrawberriesAllergyAllergicOnlyToStrawberries(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("strawberries"));
+proc testAllergicOnlyToStrawberries(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(8, "strawberries"));
 }
 
-proc testTestingForStrawberriesAllergyAllergicToStrawberriesAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("strawberries"));
+proc testAllergicToStrawberriesAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(28, "strawberries"));
 }
 
-proc testTestingForStrawberriesAllergyAllergicToSomethingButNotStrawberries(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("strawberries"));
+proc testAllergicToSomethingButNotStrawberries(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(20, "strawberries"));
 }
 
-proc testTestingForStrawberriesAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("strawberries"));
+proc testAllergicToEverythingStrawberries(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "strawberries"));
 }
 
-proc testTestingForTomatoesAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("tomatoes"));
+proc testNotAllergicToAnythingTomatoes(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "tomatoes"));
 }
 
-proc testTestingForTomatoesAllergyAllergicOnlyToTomatoes(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("tomatoes"));
+proc testAllergicOnlyToTomatoes(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(16, "tomatoes"));
 }
 
-proc testTestingForTomatoesAllergyAllergicToTomatoesAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("tomatoes"));
+proc testAllergicToTomatoesAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(56, "tomatoes"));
 }
 
-proc testTestingForTomatoesAllergyAllergicToSomethingButNotTomatoes(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("tomatoes"));
+proc testAllergicToSomethingButNotTomatoes(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(40, "tomatoes"));
 }
 
-proc testTestingForTomatoesAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("tomatoes"));
+proc testAllergicToEverythingTomatoes(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "tomatoes"));
 }
 
-proc testTestingForChocolateAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("chocolate"));
+proc testNotAllergicToAnythingChocolate(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "chocolate"));
 }
 
-proc testTestingForChocolateAllergyAllergicOnlyToChocolate(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("chocolate"));
+proc testAllergicOnlyToChocolate(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(32, "chocolate"));
 }
 
-proc testTestingForChocolateAllergyAllergicToChocolateAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("chocolate"));
+proc testAllergicToChocolateAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(112, "chocolate"));
 }
 
-proc testTestingForChocolateAllergyAllergicToSomethingButNotChocolate(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("chocolate"));
+proc testAllergicToSomethingButNotChocolate(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(80, "chocolate"));
 }
 
-proc testTestingForChocolateAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("chocolate"));
+proc testAllergicToEverythingChocolate(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "chocolate"));
 }
 
-proc testTestingForPollenAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("pollen"));
+proc testNotAllergicToAnythingPollen(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "pollen"));
 }
 
-proc testTestingForPollenAllergyAllergicOnlyToPollen(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("pollen"));
+proc testAllergicOnlyToPollen(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(64, "pollen"));
 }
 
-proc testTestingForPollenAllergyAllergicToPollenAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("pollen"));
+proc testAllergicToPollenAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(224, "pollen"));
 }
 
-proc testTestingForPollenAllergyAllergicToSomethingButNotPollen(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("pollen"));
+proc testAllergicToSomethingButNotPollen(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(160, "pollen"));
 }
 
-proc testTestingForPollenAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("pollen"));
+proc testAllergicToEverythingPollen(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "pollen"));
 }
 
-proc testTestingForCatsAllergyNotAllergicToAnything(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("cats"));
+proc testNotAllergicToAnythingCats(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(0, "cats"));
 }
 
-proc testTestingForCatsAllergyAllergicOnlyToCats(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("cats"));
+proc testAllergicOnlyToCats(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(128, "cats"));
 }
 
-proc testTestingForCatsAllergyAllergicToCatsAndSomethingElse(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("cats"));
+proc testAllergicToCatsAndSomethingElse(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(192, "cats"));
 }
 
-proc testTestingForCatsAllergyAllergicToSomethingButNotCats(test : borrowed Test) throws {
-  test.assertFalse(isAllergicTo("cats"));
+proc testAllergicToSomethingButNotCats(test : borrowed Test) throws {
+  test.assertFalse(isAllergicTo(64, "cats"));
 }
 
-proc testTestingForCatsAllergyAllergicToEverything(test : borrowed Test) throws {
-  test.assertTrue(isAllergicTo("cats"));
+proc testAllergicToEverythingCats(test : borrowed Test) throws {
+  test.assertTrue(isAllergicTo(255, "cats"));
 }
 
-proc testListWhenNoAllergies(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), []);
+proc testNoAllergies(test : borrowed Test) throws {
+  test.assertTrue(listAllergens(0).isEmpty());
 }
 
-proc testListWhenJustEggs(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs"]);
+proc testJustEggs(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(1), ["eggs"]);
 }
 
-proc testListWhenJustPeanuts(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["peanuts"]);
+proc testJustPeanuts(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(2), ["peanuts"]);
 }
 
-proc testListWhenJustStrawberries(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["strawberries"]);
+proc testJustStrawberries(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(8), ["strawberries"]);
 }
 
-proc testListWhenEggsAndPeanuts(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs", "peanuts"]);
+proc testEggsAndPeanuts(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(3), ["eggs", "peanuts"]);
 }
 
-proc testListWhenMoreThanEggsButNotPeanuts(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs", "shellfish"]);
+proc testMoreThanEggsButNotPeanuts(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(5), ["eggs", "shellfish"]);
 }
 
-proc testListWhenLotsOfStuff(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
+proc testLotsOfStuff(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(248), ["strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
 }
 
-proc testListWhenEverything(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
+proc testEverything(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(255), ["eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
 }
 
-proc testListWhenNoAllergenScoreParts(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
+proc testNoAllergenScoreParts(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(509), ["eggs", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]);
 }
 
-proc testListWhenNoAllergenScorePartsWithoutHighestValidScore(test : borrowed Test) throws {
-  test.assertEqual(list({{input}}), ["eggs"]);
+proc testNoAllergenScorePartsWithoutHighestValidScore(test : borrowed Test) throws {
+  test.assertEqual(listAllergens(257), ["eggs"]);
 }
 
 UnitTest.main();
