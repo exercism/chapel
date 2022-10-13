@@ -1,5 +1,5 @@
 use UnitTest;
-
+use UnitTest.TestError;
 use NucleotideCount;
 
 proc testEmptyStrand(test : borrowed Test) throws {
