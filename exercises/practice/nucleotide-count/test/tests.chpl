@@ -21,9 +21,11 @@ proc testStrandWithMultipleNucleotides(test : borrowed Test) throws {
 proc testStrandWithInvalidNucleotides(test : borrowed Test) throws {
   try {
     nucleotideCounts("AGXXACT");
-    throw new owned AssertionError("function was expected to throw an error");
-  } catch e: IllegalArgumentError {
+    throw new AssertionError("Function was expected to throw an error");
+  } catch e : IllegalArgumentError {
     test.assertEqual(e.message(), "Invalid nucleotide in strand");
+  } catch e {
+    throw e;
   }
 }
 
