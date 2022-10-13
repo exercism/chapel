@@ -1,0 +1,5 @@
+[brick]
+name="isogram"
+version="0.1.0"
+chplVersion="1.28.0"
+type="application"
