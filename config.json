@@ -73,11 +73,43 @@
         "difficulty": 1
       },
       {
+        "uuid": "2ad98a06-67c9-4efd-8f8f-b687ef72f754",
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "uuid": "69b04b2c-164c-491d-9731-506c0983325e",
+        "slug": "isogram",
+        "name": "Isogram",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "uuid": "d4705802-7ea5-459b-86d1-e0b171e6d0f5",
+        "slug": "high-scores",
+        "name": "High Scores",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "uuid": "6b3c464c-bb34-4667-8dd6-dc9d0c06326c",
+        "slug": "nucleotide-count",
+        "name": "Nucleotide Count",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "slug": "raindrops",
         "name": "Raindrops",
-	"practices": [],
-	"prerequisites": [],
+        "practices": [],
+        "prerequisites": [],
         "difficulty": 2
       },
       {
@@ -97,30 +129,6 @@
         "difficulty": 2
       },
       {
-        "uuid": "2ad98a06-67c9-4efd-8f8f-b687ef72f754",
-        "slug": "collatz-conjecture",
-        "name": "Collatz Conjecture",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
-      },
-      {
-        "uuid": "69b04b2c-164c-491d-9731-506c0983325e",
-        "slug": "isogram",
-        "name": "Isogram",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
-      },
-      {
-        "uuid": "6b3c464c-bb34-4667-8dd6-dc9d0c06326c",
-        "slug": "nucleotide-count",
-        "name": "Nucleotide Count",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 1
-      },
-      {
         "uuid": "23034fea-e43c-4ce7-9ef9-289793279feb",
         "slug": "series",
         "name": "Series",
@@ -137,14 +145,13 @@
         "difficulty": 3
       },
       {
-	"uuid": "e2d1d506-2f74-4890-99d0-e8e39c3f3259",
+        "uuid": "e2d1d506-2f74-4890-99d0-e8e39c3f3259",
         "slug": "yacht",
         "name": "Yacht",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
       }
-
     ]
   },
   "concepts": [],
