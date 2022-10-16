@@ -3,7 +3,8 @@ use UnitTest;
 use Dominoes;
 
 proc testEmptyInputEmptyOutput(test : borrowed Test) throws {
-  test.assertTrue(canChain([]));
+  var edges: [1..0] [0..1] int;
+  test.assertTrue(canChain(edges));
 }
 
 proc testSingletonInputSingletonOutput(test : borrowed Test) throws {
