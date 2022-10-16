@@ -65,6 +65,14 @@
         "difficulty": 1
       },
       {
+        "uuid": "93e093ca-6c17-472c-8acc-75eec4d6e052",
+        "slug": "gigasecond",
+        "name": "Gigasecond",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "slug": "raindrops",
         "name": "Raindrops",
