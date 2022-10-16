@@ -119,6 +119,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "uuid": "5046b55e-5bdc-4f58-8551-08158f5a512e",
+        "slug": "diamond",
+        "name": "Diamond",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       }
     ]
   },
