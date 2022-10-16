@@ -1,5 +1,8 @@
 {
-  "authors": [],
+  "authors": [
+    "kytrinyx",
+    "lucaferranti"
+  ],
   "files": {
     "solution": [
       "src/gigasecond.chpl"
