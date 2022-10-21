@@ -12,7 +12,7 @@
   "version": 3,
   "online_editor": {
     "indent_style": "space",
-    "indent_size": 4,
+    "indent_size": 2,
     "highlightjs_language": "chapel"
   },
   "files": {
@@ -86,7 +86,7 @@
         "name": "Isogram",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 2
       },
       {
         "uuid": "d4705802-7ea5-459b-86d1-e0b171e6d0f5",
@@ -102,7 +102,7 @@
         "name": "Nucleotide Count",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1
+        "difficulty": 3
       },
       {
         "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
@@ -110,7 +110,7 @@
         "name": "Raindrops",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 4
       },
       {
         "uuid": "bad2bd29-19b8-44ce-a1f4-1694b0c468a2",
@@ -118,7 +118,7 @@
         "name": "Bob",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 4
       },
       {
         "uuid": "f36a10f8-560c-4427-869c-a3bb5f260a81",
@@ -126,7 +126,7 @@
         "name": "Allergies",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 5
       },
       {
         "uuid": "23034fea-e43c-4ce7-9ef9-289793279feb",
@@ -134,7 +134,7 @@
         "name": "Series",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 4
       },
       {
         "uuid": "5046b55e-5bdc-4f58-8551-08158f5a512e",
@@ -142,7 +142,7 @@
         "name": "Diamond",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 8
       },
       {
         "uuid": "e2d1d506-2f74-4890-99d0-e8e39c3f3259",
@@ -150,7 +150,7 @@
         "name": "Yacht",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 7
       },
       {
 	"uuid": "29134363-4e01-4ccf-b26f-6f0a5dd80eef",
@@ -158,7 +158,7 @@
         "name": "Dominoes",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 3
+        "difficulty": 10
       }
     ]
   },
