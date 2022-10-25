@@ -153,6 +153,14 @@
         "difficulty": 7
       },
       {
+        "uuid": "a42d5d17-fd37-4f11-9220-00c2aab696be",
+        "slug": "meetup",
+        "name": "Meetup",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
 	"uuid": "29134363-4e01-4ccf-b26f-6f0a5dd80eef",
         "slug": "dominoes",
         "name": "Dominoes",
