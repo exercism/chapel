@@ -137,6 +137,14 @@
         "difficulty": 4
       },
       {
+	"uuid": "3686b062-b9d2-4ece-ab7b-9b2700cd4403",
+	"slug": "circular-buffer",
+	"name": "Circular Buffer",
+	"practices": [],
+	"prerequisites": [],
+	"difficulty": 7
+      },
+      {
         "uuid": "5046b55e-5bdc-4f58-8551-08158f5a512e",
         "slug": "diamond",
         "name": "Diamond",
