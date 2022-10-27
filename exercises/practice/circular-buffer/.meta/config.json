@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "lucaferranti"
+  ],
+  "files": {
+    "solution": [
+      "src/circular-buffer.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ]
+  },
+  "blurb": "A data structure that uses a single, fixed-size buffer as if it were connected end-to-end.",
+  "source": "Wikipedia",
+  "source_url": "http://en.wikipedia.org/wiki/Circular_buffer"
+}
