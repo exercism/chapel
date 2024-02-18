@@ -1,16 +1,17 @@
 module HighScores {
+  use Sort;
 
   proc latest(scores: [] int) {
    return scores.last;
   }
 
   proc personalBest(scores: [] int) {
-    var s = scores.sorted();
-    return s.last;
+    sort(scores);
+    return scores.last;
   }
 
   proc personalTopThree(scores: [] int) {
-    var s = scores.sorted();
-    return [i in 1..min(3, s.size)] s[s.size-i];
+    sort(scores);
+    return [i in 1..min(3, scores.size)] scores[scores.size-i];
   }
 }
