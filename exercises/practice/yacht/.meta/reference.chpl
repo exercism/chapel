@@ -1,15 +1,17 @@
 module Yacht {
+  use Sort;
+
   const name2nums = ["ones" => 1, "twos" => 2, "threes" => 3, "fours" => 4, "fives" => 5, "sixes" => 6];
 
   proc score(nums: [] int, cat: string) {
-    var sorted = nums.sorted();
-    if name2nums.domain.contains(cat) then return getNumber(sorted, name2nums[cat]);
-    else if cat == "full house" then return getFullHouse(sorted);
-    else if cat == "four of a kind" then return getFourKind(sorted);
-    else if cat == "little straight" then return getLittleStraight(sorted);
-    else if cat == "big straight" then return getBigStraight(sorted);
-    else if cat == "choice" then return getChoice(sorted);
-    else return getYacht(sorted);
+    sort(nums);
+    if name2nums.domain.contains(cat) then return getNumber(nums, name2nums[cat]);
+    else if cat == "full house" then return getFullHouse(nums);
+    else if cat == "four of a kind" then return getFourKind(nums);
+    else if cat == "little straight" then return getLittleStraight(nums);
+    else if cat == "big straight" then return getBigStraight(nums);
+    else if cat == "choice" then return getChoice(nums);
+    else return getYacht(nums);
   }
 
   proc getNumber(vals: [] int, num: int) {

@@ -2,7 +2,7 @@ module Allergies {
   const allergens = ["eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"];
 
   proc isAllergicTo(score: int, allergen: string) {
-    var (_, idx) = allergens.find(allergen);
+    var idx = allergens.find(allergen);
     return (1 << idx) & score != 0;
   }
 

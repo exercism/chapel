@@ -5,8 +5,8 @@ module Dominoes {
     var graph: [1..6] list(int),
         node = edges[0][0];
     for edge in edges {
-      graph[edge[0]].append(edge[1]);
-      graph[edge[1]].append(edge[0]);
+      graph[edge[0]].pushBack(edge[1]);
+      graph[edge[1]].pushBack(edge[0]);
     }
     return (graph, node);
   }

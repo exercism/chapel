@@ -4,7 +4,7 @@ module ResistorColor {
   }
 
   proc colorCode(color : string) {
-    var (_, val) = colors().find(color);
+    var val = colors().find(color);
     return val;
   }
 }
