@@ -105,6 +105,14 @@
         "difficulty": 3
       },
       {
+        "uuid": "6d626f7b-2336-49ec-8c1e-4ee3f0fa9a56",
+        "slug": "word-count",
+        "name": "Word Count",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "slug": "raindrops",
         "name": "Raindrops",
