@@ -1,0 +1,8 @@
+[brick]
+name="difference-of-squares"
+version="0.1.0"
+chplVersion="1.33.0"
+type="application"
+
+[dependencies]
+
