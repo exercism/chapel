@@ -11,11 +11,14 @@ module RomanNumerals {
 
   proc toRomanNumeral(in n: int): string {
     var res : string = "M" * (n / 1000);
-    n = n % 1000;
+    n %= 1000;
+
     res += helper(n / 100, ("C", "D", "M"));
-    n = n % 100;
+    n %= 100;
+
     res += helper(n / 10, ("X", "L", "C"));
-    n = n % 10;
+    n %= 10;
+
     res += helper(n, ("I", "V", "X"));
     return res;
   }
