@@ -16,13 +16,20 @@
     "highlightjs_language": "chapel"
   },
   "files": {
-    "solution": ["src/%{kebab_slug}.chpl"],
-    "test": ["test/tests.chpl"],
-    "example": [".meta/reference.chpl"],
-    "exemplar": [".meta/reference.chpl"]
+    "solution": [
+      "src/%{kebab_slug}.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ],
+    "exemplar": [
+      ".meta/reference.chpl"
+    ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
@@ -41,161 +48,167 @@
         "difficulty": 1
       },
       {
-        "uuid": "0b8f9871-7dd8-4f51-b8e3-be60c9297643",
         "slug": "resistor-color",
         "name": "Resistor Color",
+        "uuid": "0b8f9871-7dd8-4f51-b8e3-be60c9297643",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "fec30071-3f47-462d-be6d-5f14d6ad0d4a",
         "slug": "leap",
         "name": "Leap",
+        "uuid": "fec30071-3f47-462d-be6d-5f14d6ad0d4a",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "b3ea1ce9-db60-4e24-9f74-b9c58e7ede4b",
         "slug": "darts",
         "name": "Darts",
+        "uuid": "b3ea1ce9-db60-4e24-9f74-b9c58e7ede4b",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "93e093ca-6c17-472c-8acc-75eec4d6e052",
         "slug": "gigasecond",
         "name": "Gigasecond",
+        "uuid": "93e093ca-6c17-472c-8acc-75eec4d6e052",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "2ad98a06-67c9-4efd-8f8f-b687ef72f754",
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
+        "uuid": "2ad98a06-67c9-4efd-8f8f-b687ef72f754",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "69b04b2c-164c-491d-9731-506c0983325e",
         "slug": "isogram",
         "name": "Isogram",
+        "uuid": "69b04b2c-164c-491d-9731-506c0983325e",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
       },
       {
-        "uuid": "d4705802-7ea5-459b-86d1-e0b171e6d0f5",
         "slug": "high-scores",
         "name": "High Scores",
+        "uuid": "d4705802-7ea5-459b-86d1-e0b171e6d0f5",
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
       },
       {
-        "uuid": "6b3c464c-bb34-4667-8dd6-dc9d0c06326c",
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
+        "uuid": "6b3c464c-bb34-4667-8dd6-dc9d0c06326c",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
       },
       {
-        "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "slug": "raindrops",
         "name": "Raindrops",
+        "uuid": "b0317cb6-adaf-4fa7-a050-ad40e1139413",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
       },
       {
-        "uuid": "bad2bd29-19b8-44ce-a1f4-1694b0c468a2",
         "slug": "bob",
         "name": "Bob",
+        "uuid": "bad2bd29-19b8-44ce-a1f4-1694b0c468a2",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
       },
       {
-        "uuid": "f36a10f8-560c-4427-869c-a3bb5f260a81",
         "slug": "allergies",
         "name": "Allergies",
+        "uuid": "f36a10f8-560c-4427-869c-a3bb5f260a81",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
       },
       {
-        "uuid": "23034fea-e43c-4ce7-9ef9-289793279feb",
         "slug": "series",
         "name": "Series",
+        "uuid": "23034fea-e43c-4ce7-9ef9-289793279feb",
         "practices": [],
         "prerequisites": [],
         "difficulty": 4
       },
       {
-	"uuid": "3686b062-b9d2-4ece-ab7b-9b2700cd4403",
-	"slug": "circular-buffer",
-	"name": "Circular Buffer",
-	"practices": [],
-	"prerequisites": [],
-	"difficulty": 7
-      },
-      {
-        "uuid": "5046b55e-5bdc-4f58-8551-08158f5a512e",
-        "slug": "diamond",
-        "name": "Diamond",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8
-      },
-      {
-        "uuid": "e2d1d506-2f74-4890-99d0-e8e39c3f3259",
-        "slug": "yacht",
-        "name": "Yacht",
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "3686b062-b9d2-4ece-ab7b-9b2700cd4403",
         "practices": [],
         "prerequisites": [],
         "difficulty": 7
       },
       {
-        "uuid": "a42d5d17-fd37-4f11-9220-00c2aab696be",
+        "slug": "diamond",
+        "name": "Diamond",
+        "uuid": "5046b55e-5bdc-4f58-8551-08158f5a512e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "e2d1d506-2f74-4890-99d0-e8e39c3f3259",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 7
+      },
+      {
         "slug": "meetup",
         "name": "Meetup",
+        "uuid": "a42d5d17-fd37-4f11-9220-00c2aab696be",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
       },
       {
-	"uuid": "29134363-4e01-4ccf-b26f-6f0a5dd80eef",
         "slug": "dominoes",
         "name": "Dominoes",
+        "uuid": "29134363-4e01-4ccf-b26f-6f0a5dd80eef",
         "practices": [],
         "prerequisites": [],
         "difficulty": 10
       },
       {
-       "uuid": "f720055b-312a-44af-b05b-4beaf484ad2e",
-       "slug": "difference-of-squares",
-       "name": "Difference of Squares",
-       "practices": [],
-       "prerequisites": [],
-       "difficulty": 1
+        "slug": "difference-of-squares",
+        "name": "Difference of Squares",
+        "uuid": "f720055b-312a-44af-b05b-4beaf484ad2e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "roman-numerals",
+        "name": "Roman Numerals",
+        "uuid": "bc0a8910-6d7e-4ee8-8a5c-531e92ce7c4e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
-  "concepts": [],
-  "key_features": [],
   "tags": [
-    "typing/static",
     "execution_mode/compiled",
-    "platform/mac",
-    "platform/linux",
     "paradigm/imperative",
     "paradigm/object_oriented",
+    "platform/linux",
+    "platform/mac",
     "runtime/standalone_executable",
+    "typing/static",
     "used_for/scientific_calculations"
   ]
 }
