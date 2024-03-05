@@ -1,0 +1,17 @@
+{
+  "authors": ["lucaferranti"],
+  "files": {
+    "solution": [
+      "src/rna-transcription.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ]
+  },
+  "blurb": "Given a DNA strand, return its RNA Complement Transcription.",
+  "source": "Hyperphysics",
+  "source_url": "https://web.archive.org/web/20220408112140/http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html"
+}
