@@ -218,5 +218,37 @@
     "runtime/standalone_executable",
     "typing/static",
     "used_for/scientific_calculations"
+  ],
+  "key_features": [
+    {
+      "title": "Open source",
+      "content": "Chapel is open source and has a welcoming and open community",
+      "icon": "community"
+    },
+    {
+      "title": "Parallel",
+      "content": "Chapel makes parallel programming easy and fun",
+      "icon": "concurrency"
+    },
+    {
+      "title": "Scalable",
+      "content": "runs on laptops, clusters, the cloud, and HPC systems",
+      "icon": "powerful"
+    },
+    {
+      "title": "Fast",
+      "content": "performance competes with or beats C/C++ & MPI & OpenMP",
+      "icon": "fast"
+    },
+    {
+      "title": "Expressive",
+      "content": "Chapel code is easy to read and easy to write",
+      "icon": "expressive"
+    },
+    {
+      "title": "Scientific",
+      "content": "Chapel is a great fit for applications involving heavy computations or big data analysis",
+      "icon": "scientific"
+    }
   ]
 }
