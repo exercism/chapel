@@ -4,9 +4,12 @@
   "active": false,
   "status": {
     "concept_exercises": false,
-    "test_runner": false,
+    "test_runner": true,
     "representer": false,
     "analyzer": false
+  },
+  "test_runner": {
+    "average_run_time": 10
   },
   "blurb": "Chapel is a programming language designed for productive parallel computing at scale.",
   "version": 3,
