@@ -1,17 +1,18 @@
 use UnitTest;
-
+use UnitTest.TestError;
+use List;
 use Forth;
 
 proc testParsingAndNumbersNumbersJustGetPushedOntoTheStack(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 3 4 5"]), [1, 2, 3, 4, 5]);
+  test.assertEqual(evaluate(["1 2 3 4 5"]), new list([1, 2, 3, 4, 5]));
 }
 
 proc testParsingAndNumbersPushesNegativeNumbersOntoTheStack(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["-1 -2 -3 -4 -5"]), [-1, -2, -3, -4, -5]);
+  test.assertEqual(evaluate(["-1 -2 -3 -4 -5"]), new list([-1, -2, -3, -4, -5]));
 }
 
 proc testAdditionCanAddTwoNumbers(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 +"]), [3]);
+  test.assertEqual(evaluate(["1 2 +"]), new list([3]));
 }
 
 proc testAdditionErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -37,7 +38,7 @@ proc testAdditionErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Test) thr
 }
 
 proc testSubtractionCanSubtractTwoNumbers(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["3 4 -"]), [-1]);
+  test.assertEqual(evaluate(["3 4 -"]), new list([-1]));
 }
 
 proc testSubtractionErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -63,7 +64,7 @@ proc testSubtractionErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Test) 
 }
 
 proc testMultiplicationCanMultiplyTwoNumbers(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["2 4 *"]), [8]);
+  test.assertEqual(evaluate(["2 4 *"]), new list([8]));
 }
 
 proc testMultiplicationErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -89,11 +90,11 @@ proc testMultiplicationErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Tes
 }
 
 proc testDivisionCanDivideTwoNumbers(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["12 3 /"]), [4]);
+  test.assertEqual(evaluate(["12 3 /"]), new list([4]));
 }
 
 proc testDivisionPerformsIntegerDivision(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["8 3 /"]), [2]);
+  test.assertEqual(evaluate(["8 3 /"]), new list([2]));
 }
 
 proc testDivisionErrorsIfDividingByZero(test : borrowed Test) throws {
@@ -130,19 +131,19 @@ proc testDivisionErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Test) thr
 }
 
 proc testCombinedArithmeticAdditionAndSubtraction(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 + 4 -"]), [-1]);
+  test.assertEqual(evaluate(["1 2 + 4 -"]), new list([-1]));
 }
 
 proc testCombinedArithmeticMultiplicationAndDivision(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["2 4 * 3 /"]), [2]);
+  test.assertEqual(evaluate(["2 4 * 3 /"]), new list([2]));
 }
 
 proc testDupCopiesAValueOnTheStack(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 dup"]), [1, 1]);
+  test.assertEqual(evaluate(["1 dup"]), new list([1, 1]));
 }
 
 proc testDupCopiesTheTopValueOnTheStack(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 dup"]), [1, 2, 2]);
+  test.assertEqual(evaluate(["1 2 dup"]), new list([1, 2, 2]));
 }
 
 proc testDupErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -157,11 +158,11 @@ proc testDupErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
 }
 
 proc testDropRemovesTheTopValueOnTheStackIfItIsTheOnlyOne(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 drop"]), []);
+  test.assertTrue(evaluate(["1 drop"]).isEmpty());
 }
 
 proc testDropRemovesTheTopValueOnTheStackIfItIsNotTheOnlyOne(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 drop"]), [1]);
+  test.assertEqual(evaluate(["1 2 drop"]), new list([1]));
 }
 
 proc testDropErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -176,11 +177,11 @@ proc testDropErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
 }
 
 proc testSwapSwapsTheTopTwoValuesOnTheStackIfTheyAreTheOnlyOnes(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 swap"]), [2, 1]);
+  test.assertEqual(evaluate(["1 2 swap"]), new list([2, 1]));
 }
 
 proc testSwapSwapsTheTopTwoValuesOnTheStackIfTheyAreNotTheOnlyOnes(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 3 swap"]), [1, 3, 2]);
+  test.assertEqual(evaluate(["1 2 3 swap"]), new list([1, 3, 2]));
 }
 
 proc testSwapErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -206,11 +207,11 @@ proc testSwapErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Test) throws 
 }
 
 proc testOverCopiesTheSecondElementIfThereAreOnlyTwo(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 over"]), [1, 2, 1]);
+  test.assertEqual(evaluate(["1 2 over"]), new list([1, 2, 1]));
 }
 
 proc testOverCopiesTheSecondElementIfThereAreMoreThanTwo(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 3 over"]), [1, 2, 3, 2]);
+  test.assertEqual(evaluate(["1 2 3 over"]), new list([1, 2, 3, 2]));
 }
 
 proc testOverErrorsIfThereIsNothingOnTheStack(test : borrowed Test) throws {
@@ -236,33 +237,33 @@ proc testOverErrorsIfThereIsOnlyOneValueOnTheStack(test : borrowed Test) throws 
 }
 
 proc testUserDefinedWordsCanConsistOfBuiltInWords(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": dup-twice dup dup ;", "1 dup-twice"]), [1, 1, 1]);
+  test.assertEqual(evaluate([": dup-twice dup dup ;", "1 dup-twice"]), new list([1, 1, 1]));
 }
 
 proc testUserDefinedWordsExecuteInTheRightOrder(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": countup 1 2 3 ;", "countup"]), [1, 2, 3]);
+  test.assertEqual(evaluate([": countup 1 2 3 ;", "countup"]), new list([1, 2, 3]));
 }
 
 proc testUserDefinedWordsCanOverrideOtherUserDefinedWords(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": foo dup ;", ": foo dup dup ;", "1 foo"]), [1, 1, 1]);
+  test.assertEqual(evaluate([": foo dup ;", ": foo dup dup ;", "1 foo"]), new list([1, 1, 1]));
 }
 
 proc testUserDefinedWordsCanOverrideBuiltInWords(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": swap dup ;", "1 swap"]), [1, 1]);
+  test.assertEqual(evaluate([": swap dup ;", "1 swap"]), new list([1, 1]));
 }
 
 proc testUserDefinedWordsCanOverrideBuiltInOperators(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": + * ;", "3 4 +"]), [12]);
+  test.assertEqual(evaluate([": + * ;", "3 4 +"]), new list([12]));
 }
 
 proc testUserDefinedWordsCanUseDifferentWordsWithTheSameName(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": foo 5 ;", ": bar foo ;", ": foo 6 ;", "bar foo"]), [5, 6]);
+  test.assertEqual(evaluate([": foo 5 ;", ": bar foo ;", ": foo 6 ;", "bar foo"]), new list([5, 6]));
 }
 
 proc testUserDefinedWordsCanDefineWordThatUsesWordWithTheSameName(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": foo 10 ;", ": foo foo 1 + ;", "foo"]), [11]);
+  test.assertEqual(evaluate([": foo 10 ;", ": foo foo 1 + ;", "foo"]), new list([11]));
 }
-
+ 
 proc testUserDefinedWordsCannotRedefineNonNegativeNumbers(test : borrowed Test) throws {
   try {
     evaluate([": 1 2 ;"]);
@@ -299,31 +300,31 @@ proc testUserDefinedWordsErrorsIfExecutingANonExistentWord(test : borrowed Test)
 proc testUserDefinedWordsOnlyDefinesLocally(test : borrowed Test) throws {
   var result1 = evaluate([": + - ;", "1 1 +"]);
   var result2 = evaluate(["1 1 +"]);
-  test.assertEqual([result1, result2], [[0], [2]]);
+  test.assertEqual([result1, result2], [new list([0]), new list([2])]);
 }
 
 proc testCaseInsensitivityDupIsCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 DUP Dup dup"]), [1, 1, 1, 1]);
+  test.assertEqual(evaluate(["1 DUP Dup dup"]), new list([1, 1, 1, 1]));
 }
 
 proc testCaseInsensitivityDropIsCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 3 4 DROP Drop drop"]), [1]);
+  test.assertEqual(evaluate(["1 2 3 4 DROP Drop drop"]), new list([1]));
 }
 
 proc testCaseInsensitivitySwapIsCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 SWAP 3 Swap 4 swap"]), [2, 3, 4, 1]);
+  test.assertEqual(evaluate(["1 2 SWAP 3 Swap 4 swap"]), new list([2, 3, 4, 1]));
 }
 
 proc testCaseInsensitivityOverIsCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate(["1 2 OVER Over over"]), [1, 2, 1, 2, 1]);
+  test.assertEqual(evaluate(["1 2 OVER Over over"]), new list([1, 2, 1, 2, 1]));
 }
 
 proc testCaseInsensitivityUserDefinedWordsAreCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": foo dup ;", "1 FOO Foo foo"]), [1, 1, 1, 1]);
+  test.assertEqual(evaluate([": foo dup ;", "1 FOO Foo foo"]), new list([1, 1, 1, 1]));
 }
 
 proc testCaseInsensitivityDefinitionsAreCaseInsensitive(test : borrowed Test) throws {
-  test.assertEqual(evaluate([": SWAP DUP Dup dup ;", "1 swap"]), [1, 1, 1, 1]);
+  test.assertEqual(evaluate([": SWAP DUP Dup dup ;", "1 swap"]), new list([1, 1, 1, 1]));
 }
 
 UnitTest.main();
