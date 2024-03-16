@@ -8,15 +8,15 @@
     "representer": false,
     "analyzer": false
   },
-  "test_runner": {
-    "average_run_time": 10
-  },
   "blurb": "Chapel is a programming language designed for productive parallel computing at scale.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
     "indent_size": 2,
     "highlightjs_language": "chapel"
+  },
+  "test_runner": {
+    "average_run_time": 10
   },
   "files": {
     "solution": [
@@ -209,19 +209,17 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "forth",
+        "name": "Forth",
+        "uuid": "48dd93c3-6fa4-4e9c-a973-6fdbd3a640a5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 10
       }
     ]
   },
-  "tags": [
-    "execution_mode/compiled",
-    "paradigm/imperative",
-    "paradigm/object_oriented",
-    "platform/linux",
-    "platform/mac",
-    "runtime/standalone_executable",
-    "typing/static",
-    "used_for/scientific_calculations"
-  ],
   "key_features": [
     {
       "title": "Open source",
@@ -253,5 +251,15 @@
       "content": "Chapel is a great fit for applications involving heavy computations or big data analysis",
       "icon": "scientific"
     }
+  ],
+  "tags": [
+    "execution_mode/compiled",
+    "paradigm/imperative",
+    "paradigm/object_oriented",
+    "platform/linux",
+    "platform/mac",
+    "runtime/standalone_executable",
+    "typing/static",
+    "used_for/scientific_calculations"
   ]
 }
