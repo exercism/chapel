@@ -1,0 +1,18 @@
+{
+  "authors": ["lucaferranti"],
+  "contributors": ["kytrinyx"],
+  "files": {
+    "solution": [
+      "src/anagram.chpl"
+    ],
+    "test": [
+      "test/tests.chpl"
+    ],
+    "example": [
+      ".meta/reference.chpl"
+    ]
+  },
+  "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
+  "source": "Inspired by the Extreme Startup game",
+  "source_url": "https://github.com/rchatley/extreme_startup"
+}

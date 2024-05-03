@@ -217,6 +217,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1
+      },
+      {
+        "slug": "anagram",
+        "name": "Anagram",
+        "uuid": "b2d3f839-29fe-4659-94bf-5b14ad39d1bd",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       }
     ]
   },
