@@ -211,6 +211,14 @@
         "difficulty": 1
       },
       {
+        "slug": "pangram",
+        "name": "Pangram",
+        "uuid": "f9a36482-c18f-4013-bfce-a559ad4c2f79",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "b2d3f839-29fe-4659-94bf-5b14ad39d1bd",
