@@ -1,12 +1,12 @@
 module Meetup {
   use Time;
-  const day2num = ["Monday" => 1,
-                   "Tuesday" => 2,
-                   "Wednesday" => 3,
-                   "Thursday" => 4,
-                   "Friday" => 5,
-                   "Saturday" => 6,
-                   "Sunday" => 7];
+  const day2num = ["Monday" => 0,
+                   "Tuesday" => 1,
+                   "Wednesday" => 2,
+                   "Thursday" => 3,
+                   "Friday" => 4,
+                   "Saturday" => 5,
+                   "Sunday" => 6];
   const ord2day = ["teenth" => 13,
                    "first" => 1,
                    "second" => 8,
