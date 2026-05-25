@@ -1,3 +1,7 @@
+# Instructions append
+
+## Implementation
+
 Your task is to implement two functions
 
 - `colors`: which returns an array of strings containing the colors in increasing order of value.

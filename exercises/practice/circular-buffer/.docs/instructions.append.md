@@ -1,3 +1,7 @@
+# Instructions append
+
+## Implementation
+
 Your task is to implement a record `circularBuffer` that has the following methods
 
 - `clear()`: empties the buffer.

@@ -1,3 +1,7 @@
+# Instructions append
+
+## Implementation
+
 Your task is to write three functions
 
 - `latest`: which takes an array of scores and returns the last one.
