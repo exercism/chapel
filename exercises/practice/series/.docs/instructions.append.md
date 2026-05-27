@@ -1,6 +1,6 @@
 # Instructions append
 
-## Implementation
+## Track specific instructions
 
 Implement a function called `slices` that returns an array of strings as described above.
 Your function should throw an `IllegalArgumentError` with an appropriate error message as following.
