@@ -1,3 +1,7 @@
+# Instructions append
+
+## Track specific instructions
+
 Your task is to implement two functions
 
 - `isAllergicTo`: which takes as input the patient allergy score and the allergen under test, and returns true if the patient is allergic to the given allergen.

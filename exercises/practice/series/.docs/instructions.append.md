@@ -1,3 +1,7 @@
+# Instructions append
+
+## Track specific instructions
+
 Implement a function called `slices` that returns an array of strings as described above.
 Your function should throw an `IllegalArgumentError` with an appropriate error message as following.
 - If the given string is empty, error with message `series cannot be empty`.
