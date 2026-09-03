@@ -23,9 +23,9 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-26.04
     container:
-      image: chapel/chapel:2.0.0
+      image: chapel/chapel:2.6.0
 
     steps:
       - name: Checkout repository
