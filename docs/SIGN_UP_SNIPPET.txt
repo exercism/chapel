@@ -1,0 +1,10 @@
+proc mostCommonWord(text: string): string {
+  var counts: map(string, int);
+  var best = "";
+  for word in text.toLower().split(" ") {
+    const count = counts.get(word, 0) + 1;
+    counts.addOrReplace(word, count);
+    if count > counts.get(best, 0) then best = word;
+  }
+  return "\"%s\" appears %i times".format(best, counts.get(best, 0));
+}
